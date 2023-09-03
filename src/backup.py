@@ -5,8 +5,6 @@ from datetime import datetime
 import argparse
 import re
 
-#last_upt = 0
-
 # specify defaults by manually changing lists
 ignore_dirs = ['github', 'adobe', 'arduino', 'custom office templates', 'for all mankind']
 ignore_files = []
@@ -16,8 +14,8 @@ def check_items(path, top_level):
 	items = os.listdir(path)
 	update_log = []
 
-	def backup_dir(dir_name, path, c_time, update_log):
-		if dir_name not in os.listdir(path):# or c_time > last_upt
+	def backup_dir(dir_name, path, update_log):
+		if dir_name not in os.listdir(path):
 			os.mkdir(os.path.join(path, dir_name))
 			update_log.append(f'created dir - {os.path.join(path, dir_name)}')
 		return update_log
