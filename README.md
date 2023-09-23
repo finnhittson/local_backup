@@ -1,4 +1,4 @@
-# Project Title
+# Local Backup
 
 Local backup is a simple script to backup desired directories and files to a secondary local location. Given desired directories, non-desired directories, non-desired files and a backup location, the script is systemetically check if these files are present and remove or copy those of interest.
 
