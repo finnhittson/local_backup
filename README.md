@@ -13,8 +13,6 @@ git clone https://github.com/finnhittson/local_backup.git
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
 Once cloned, open the `backup.py` file under `src` and edit lines 9, 10, and 11 to your liking. Once modified, backup your files with the following command.
 ```
 python backup.py --backup-loc="E"
