@@ -6,7 +6,7 @@ import argparse
 import re
 
 # specify defaults by manually changing lists
-ignore_dirs = ['github', 'adobe', 'arduino', 'custom office templates', 'for all mankind']
+ignore_dirs = ['github', 'adobe', 'arduino', 'custom office templates']
 ignore_files = []
 target_dirs = ['Documents', 'Desktop']
 
